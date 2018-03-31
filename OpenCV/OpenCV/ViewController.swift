@@ -9,15 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var beautyOne: UIImageView!
+    @IBOutlet weak var beautyTwo: UIImageView!
+    @IBOutlet weak var beautyThree: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        view.backgroundColor = UIColor.gray
+        initUI()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+   
+    
+    func initUI() {
+        beautyTwo.image = OpenCV.cvtColorBGR2GRAY(UIImage(named: "beauty")!)
+        beautyThree.image = OpenCV.cvtColorBGR2Mult(UIImage(named: "beauty")!)
+        
     }
 
 

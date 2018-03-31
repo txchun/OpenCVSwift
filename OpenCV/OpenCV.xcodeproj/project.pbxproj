@@ -15,6 +15,7 @@
 		5242971A206DEAE3002FA6DB /* OpenCVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52429719206DEAE3002FA6DB /* OpenCVTests.swift */; };
 		52429725206DEAE3002FA6DB /* OpenCVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52429724206DEAE3002FA6DB /* OpenCVUITests.swift */; };
 		5286775E206DEC1E00FE3825 /* OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5286775D206DEC1E00FE3825 /* OpenCV.mm */; };
+		52867761206E37A200FE3825 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52867760206E37A200FE3825 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5286775B206DEC1D00FE3825 /* OpenCV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCV-Bridging-Header.h"; sourceTree = "<group>"; };
 		5286775C206DEC1E00FE3825 /* OpenCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCV.h; sourceTree = "<group>"; };
 		5286775D206DEC1E00FE3825 /* OpenCV.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCV.mm; sourceTree = "<group>"; };
+		52867760206E37A200FE3825 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52867761206E37A200FE3825 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +104,7 @@
 		52429703206DEAE3002FA6DB /* OpenCV */ = {
 			isa = PBXGroup;
 			children = (
+				5286775F206E37A200FE3825 /* lib */,
 				52429704206DEAE3002FA6DB /* AppDelegate.swift */,
 				52429706206DEAE3002FA6DB /* ViewController.swift */,
 				52429708206DEAE3002FA6DB /* Main.storyboard */,
@@ -130,6 +134,14 @@
 				52429726206DEAE3002FA6DB /* Info.plist */,
 			);
 			path = OpenCVUITests;
+			sourceTree = "<group>";
+		};
+		5286775F206E37A200FE3825 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				52867760206E37A200FE3825 /* opencv2.framework */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @interface OpenCV : NSObject
-
++ (nonnull UIImage *)cvtColorBGR2GRAY:(nonnull UIImage *)image;
++ (nonnull UIImage *)cvtColorBGR2Mult:(nonnull UIImage *)image;
 @end
